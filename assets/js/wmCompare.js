@@ -4,11 +4,11 @@ function compare() {
     var inputCurrentArray = inputCurrent.value.split("\n");
     var inputAvailableArray = inputAvailable.value.split("\n");
     var counter = 0;
-    var finding = "";
     for (var _i = 0; _i < inputCurrentArray.length; _i++) {
         var current = inputCurrentArray[_i];
         var referenceNumber = extractNumber(current);
         var highestNumber = 0;
+        var finding = "";
         for (var _o = 0; _o < inputAvailableArray.length; _o++) {
             var available = inputAvailableArray[_o];
             if (current.substr(0, lastUnderscorePosition(current)) == available.substr(0, lastUnderscorePosition(available))) {
